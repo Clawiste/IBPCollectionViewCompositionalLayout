@@ -420,6 +420,7 @@
 
 - (IBPNSCollectionLayoutItem *)layoutItemAtIndexPath:(NSIndexPath *)indexPath {
     NSArray<IBPCollectionCompositionalLayoutSolverResult *> *results = self.results;
+    NSInteger count = results.count;
     
     if (count == 0) {
         return nil;
